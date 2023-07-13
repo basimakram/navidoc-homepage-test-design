@@ -26,7 +26,7 @@ $(document).ready(function () {
                 items: 2,
             },
             1300: {
-                items: 4,
+                items: 3,
             },
             1600: {
                 items: 4,
