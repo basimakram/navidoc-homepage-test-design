@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Updated Header</title>
+
+    <link rel="stylesheet" href="styles/header-2.css" />
+  </head>
+  <body>
+    <!--Header Container-->
+    <div class="header-container">
+      <!--Header Content-->
+      <div class="header-content">
+        <div class="header-left-align">
+          <img class="s-icon" src="images/Group 3 - fb.png" alt="" />
+          <img class="s-icon" src="images/Group 3 ln.png" alt="" />
+          <img class="s-icon" src="images/Group 3 ig.png" alt="" />
+          <button
+            class="email-button"
+            onclick="location.href= 'mailto:info@navidoc.dk'"
+          >
+            <img class="email-icon" src="images/email.svg" />
+            <p>info@navidoc.dk</p>
+            <!-- <div class="tooltip">email</div> -->
+          </button>
+          <button
+            class="call-button"
+            onclick="location.href = 'tel:+45 4692 2842'
+        "
+          >
+            <img class="call-icon" src="images/phone.svg" />
+            <p>+45 4692 2842</p>
+            <!-- <div class="tooltip">Call</div> -->
+          </button>
+        </div>
+
+        <div class="header-right-align">
+          <div class="login-div">
+            <button class="email-button">
+              <img class="email-icon" src="images/login.svg" />
+              <p>Login to Workflow</p>
+              <!-- <div class="tooltip">email</div> -->
+            </button>
+            <button class="call-button">
+              <img class="call-icon" src="images/login.svg" />
+              <p>Login to Gateway</p>
+              <!-- <div class="tooltip">Call</div> -->
+            </button>
+          </div>
+
+          <div class="langauge-div">
+            <button class="dk-uk-button">
+              <img class="dk-icon" src="images/dk-flag.svg" />
+              <p class="DK">DK</p>
+              <p class="slash">/</p>
+              <p class="UK">UK</p>
+              <img class="uk-icon" src="images/us-flag.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get references to the DK and UK paragraphs
+      const dkParagraph = document.querySelector(".DK");
+      const ukParagraph = document.querySelector(".UK");
+
+      // Set the initial color state
+      dkParagraph.style.color = "white";
+      ukParagraph.style.color = "gray";
+
+      // Add click event listeners to the paragraphs
+      dkParagraph.addEventListener("click", () => {
+        dkParagraph.style.color = "gray";
+        ukParagraph.style.color = "white";
+        ukParagraph.style.cursor = "pointer";
+        ukIcon.style.cursor = "pointer";
+        dkParagraph.style.cursor = "auto";
+        dkIcon.style.cursor = "auto";
+      });
+
+      ukParagraph.addEventListener("click", () => {
+        dkParagraph.style.color = "white";
+        ukParagraph.style.color = "gray";
+        dkParagraph.style.cursor = "pointer";
+        dkIcon.style.cursor = "pointer";
+        ukParagraph.style.cursor = "auto";
+        ukIcon.style.cursor = "auto";
+      });
+
+      // Get references to the dk-icon and uk-icon elements
+      const dkIcon = document.querySelector(".dk-icon");
+      const ukIcon = document.querySelector(".uk-icon");
+
+      // Add click event listeners to the icons
+      dkIcon.addEventListener("click", () => {
+        dkParagraph.style.color = "gray";
+        ukParagraph.style.color = "white";
+        ukParagraph.style.cursor = "pointer";
+        ukIcon.style.cursor = "pointer";
+        dkParagraph.style.cursor = "auto";
+        dkIcon.style.cursor = "auto";
+      });
+
+      ukIcon.addEventListener("click", () => {
+        dkParagraph.style.color = "white";
+        ukParagraph.style.color = "gray";
+        dkParagraph.style.cursor = "pointer";
+        dkIcon.style.cursor = "pointer";
+        ukParagraph.style.cursor = "auto";
+        ukIcon.style.cursor = "auto";
+      });
+
+      // Add cursor pointer style if color is white
+      if (dkParagraph.style.color === "white") {
+        dkParagraph.style.cursor = "pointer";
+        dkIcon.style.cursor = "pointer";
+      }
+
+      if (ukParagraph.style.color === "white") {
+        ukParagraph.style.cursor = "pointer";
+        ukIcon.style.cursor = "pointer";
+      }
+    </script>
+  </body>
+</html>
