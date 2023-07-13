@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navidoc-homepage-container {
+  inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.navidoc-homepage-content {
+  inline-size: 70%;
+}
+
+.navidoc-homepage-content-2 {
+  inline-size: 80%;
+}
+.demo-button {
+  padding: 10px 20px;
+  background-color: #9ac45b;
+  color: black;
+  border: none;
+  font-weight: normal;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .navidoc-homepage-content {
+    inline-size: 90%;
+  }
+}
