@@ -29,7 +29,7 @@ $(document).ready(function () {
                 items: 2,
             },
             1600: {
-                items: 4,
+                items: 3,
             },
 
             1900: {
